@@ -1,0 +1,19 @@
+{
+    "explorer.openAction.relativePath": true,
+    "explorer.previewAction.onHover": false,
+    "explorer.position": "right",
+    "explorer.width": 100,
+    "explorer.file.hiddenRules": {
+        "patternMatches": [
+            "^\\.git",
+            "^\\.idea",
+        ]
+    },
+    "explorer.quitOnOpen": true,
+    "explorer.filename.colored.enable": false,
+
+    "translator.toLang": "en",
+    "translator.engines": [
+        "google"
+    ]
+}
