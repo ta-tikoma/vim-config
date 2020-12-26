@@ -1,4 +1,13 @@
 {
+    "languageserver": {
+        "psalmls": {
+            "command": "/home/ni_shi/.config/composer/vendor/bin/psalm-language-server",
+            "filetypes": ["php"],
+            "rootPatterns": ["psalm.xml", "psalm.xml.dist"],
+            "requireRootPattern": true
+        }
+    },
+
     "explorer.openAction.relativePath": true,
     "explorer.previewAction.onHover": false,
     "explorer.position": "right",
@@ -18,12 +27,6 @@
     ],
 
     "coc.preferences.formatOnSaveFiletypes": ["php"],
-
-    "cSpellExt.enableDictionaries": ["russian"],
-    "cSpell.language": "en,ru",
-    "cSpell.enabledLanguageIds": [
-        "php"
-    ],
 
     "diagnostic-languageserver.filetypes": {
         "php": ["phpcs"]
@@ -53,4 +56,22 @@
             }
         }
     },
+    "diagnostic-languageserver.formatFiletypes": {
+        "php": "phpcbf"
+    },
+    "diagnostic-languageserver.formatters": {
+        "phpcbf": {
+            "command": "./vendor/bin/phpcbf",
+            "rootPatterns": ["composer.json", "composer.lock", "vendor", ".git"],
+            "args": ["--standard=PSR2,PSR1", "%file"],
+            "isStdout": false,
+            "doesWriteToFile": true
+        }
+    },
+
+    "cSpellExt.enableDictionaries": ["russian"],
+    "cSpell.language": "en,ru",
+    "cSpell.enabledLanguageIds": [
+        "php"
+    ]
 }

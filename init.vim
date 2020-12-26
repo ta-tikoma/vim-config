@@ -99,14 +99,13 @@ let g:indentLine_char = '·'
 let g:phpunit_bin = 'cd devenv && docker-compose exec -T php72 php vendor/phpunit/phpunit/phpunit'
 noremap <F10> :PHPUnitRunCurrentFile<CR>
 
-" source ~/.config/nvim/include/coc-old.vim
 source ~/.config/nvim/include/coc.vim
 source ~/.config/nvim/include/coc-custom.vim
 
-source ~/.config/nvim/include/ale.vim
+" source ~/.config/nvim/include/ale.vim
 source ~/.config/nvim/include/fzf.vim
 source ~/.config/nvim/include/lightline.vim
-source ~/.config/nvim/include/spelunker.vim
+" source ~/.config/nvim/include/spelunker.vim
 source ~/.config/nvim/include/startify.vim
 source ~/.config/nvim/include/floaterm.vim
 source ~/.config/nvim/include/fugitive.vim

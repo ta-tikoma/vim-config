@@ -8,8 +8,8 @@ Plug 'sainnhe/sonokai'
 
 " Валидация и помощь по языку
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dense-analysis/ale'
-Plug 'kamykn/spelunker.vim'
+" Plug 'dense-analysis/ale'
+" Plug 'kamykn/spelunker.vim'
 
 " Закрыть буфер без закрытия сплита
 Plug 'qpkorr/vim-bufkill'
@@ -27,6 +27,7 @@ Plug 'tomtom/tcomment_vim'
 " Для парных скобок
 Plug 'jiangmiao/auto-pairs'
 
+" Размеры окон
 Plug 'simeji/winresizer'
 
 Plug 'tpope/vim-surround'
@@ -53,7 +54,7 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'maximbaz/lightline-ale'
 
 " UTILS
-Plug 'ta-tikoma/phpunit.vim'
+" Plug 'ta-tikoma/phpunit.vim'
 " Plug 'diepm/vim-rest-console'
 
 call plug#end()
