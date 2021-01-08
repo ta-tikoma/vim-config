@@ -1,4 +1,9 @@
 {
+    "diagnostic.errorSign": "xx",
+    "diagnostic.warningSign": "ww",
+    "diagnostic.infoSign": "??",
+    "diagnostic.hintSign": "!!",
+
     "languageserver": {
         "psalmls": {
             "command": "/home/ni_shi/.config/composer/vendor/bin/psalm-language-server",

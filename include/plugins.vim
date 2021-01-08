@@ -9,7 +9,6 @@ Plug 'sainnhe/sonokai'
 " Валидация и помощь по языку
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'dense-analysis/ale'
-" Plug 'kamykn/spelunker.vim'
 
 " Закрыть буфер без закрытия сплита
 Plug 'qpkorr/vim-bufkill'
@@ -30,6 +29,10 @@ Plug 'jiangmiao/auto-pairs'
 " Размеры окон
 Plug 'simeji/winresizer'
 
+" Создание своих модов
+Plug 'kana/vim-submode'
+
+" Для работы с парными элементами
 Plug 'tpope/vim-surround'
 
 " Для вырванивания
@@ -51,7 +54,7 @@ Plug 'junegunn/fzf.vim'
 " LIGHTLINE
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
-Plug 'maximbaz/lightline-ale'
+Plug 'mengelbrecht/lightline-bufferline'
 
 " UTILS
 " Plug 'ta-tikoma/phpunit.vim'
