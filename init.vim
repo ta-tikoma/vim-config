@@ -49,31 +49,21 @@ set ww=lh
 inoremap jj <Esc>:w<CR>
 
 " навигация по буферам
-nmap <C-k> :bprevious<CR>
-nmap <C-j> :bnext<CR>
-nmap <C-c> :BD<CR>
+nmap <A-k> :bprevious<CR>
+nmap <A-j> :bnext<CR>
+nmap <A-c> :BD<CR>
+nmap <A-q> :bufdo bd<CR>
+"
+nmap <A-l> :tabnext<CR>
+nmap <A-h> :tabprev<CR>
 
-nmap <C-l> :tabnext<CR>
-nmap <C-h> :tabprev<CR>
-
-" сплиты
-nmap <C-a> :split<CR>
-nmap <C-s> :vsplit<CR>
-
-" навигация по окнам
-set splitbelow
-set splitright
-map <A-k> <C-w><Up>
-map <A-j> <C-w><Down>
-map <A-h> <C-w><Left>
-map <A-l> <C-w><Right>
 
 " вставить название файла
 inoremap <C-f> <C-R>=expand("%:t:r")<CR><Esc>
 
 " удалить вникуда
 nnoremap <leader>d "_d
-nmap <silent> <leader>c *Ncgn
+" nmap <silent> <leader>c *Ncgn
 
 " без свопа
 set nobackup
@@ -85,6 +75,7 @@ source ~/.config/nvim/include/coc.vim
 source ~/.config/nvim/include/coc-custom.vim
 source ~/.config/nvim/include/plugins-config.vim
 source ~/.config/nvim/include/lightline.vim
+source ~/.config/nvim/include/windows.vim
 source ~/.config/nvim/include/php.vim
 " source ~/.config/nvim/include/ale.vim
-source ~/.config/nvim/include/psalm.vim
+" source ~/.config/nvim/include/psalm.vim

@@ -30,7 +30,17 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'simeji/winresizer'
 
 " Создание своих модов
-Plug 'kana/vim-submode'
+" Plug 'kana/vim-submode'
+
+" Мультикурсор как в саблайм
+Plug 'terryma/vim-multiple-cursors'
+
+Plug 'justinmk/vim-dirvish'
+
+Plug 'tpope/vim-projectionist'
+
+" Повторение операций
+Plug 'tpope/vim-repeat'
 
 " Для работы с парными элементами
 Plug 'tpope/vim-surround'
@@ -54,7 +64,7 @@ Plug 'junegunn/fzf.vim'
 " LIGHTLINE
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
-Plug 'mengelbrecht/lightline-bufferline'
+" Plug 'mengelbrecht/lightline-bufferline'
 
 " UTILS
 " Plug 'ta-tikoma/phpunit.vim'

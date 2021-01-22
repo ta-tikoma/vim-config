@@ -2,7 +2,7 @@
 let g:lightline = {
     \ 'colorscheme': 'sonokai',
     \ 'active': {
-    \   'left':  [[ 'buffers' ]],
+    \   'left':  [[ 'filename', 'modified' ]],
     \   'right': [[ 'gitbranch', 'lineinfo' ],
     \             [ 'coc_error', 'coc_warning', 'coc_hint', 'coc_info' ]]
     \ },
@@ -15,7 +15,6 @@ let g:lightline = {
     \   'coc_info'         : 'LightlineCocInfos',
     \   'coc_hint'         : 'LightlineCocHints',
     \   'coc_fix'          : 'LightlineCocFixes',
-    \   'buffers'          : 'lightline#bufferline#buffers',
     \ },
     \ 'component_type': {
     \   'coc_error'        : 'error',
@@ -23,7 +22,6 @@ let g:lightline = {
     \   'coc_info'         : 'middle',
     \   'coc_hint'         : 'middle',
     \   'coc_fix'          : 'middle',
-    \   'buffers'          : 'tabsel',
     \ }
     \ }
 
