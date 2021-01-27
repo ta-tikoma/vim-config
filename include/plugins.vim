@@ -27,7 +27,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'jiangmiao/auto-pairs'
 
 " Размеры окон
-Plug 'simeji/winresizer'
+" Plug 'simeji/winresizer'
 
 " Создание своих модов
 " Plug 'kana/vim-submode'
@@ -35,7 +35,8 @@ Plug 'simeji/winresizer'
 " Мультикурсор как в саблайм
 Plug 'terryma/vim-multiple-cursors'
 
-Plug 'justinmk/vim-dirvish'
+" Эксплорер
+" Plug 'justinmk/vim-dirvish'
 
 Plug 'tpope/vim-projectionist'
 
@@ -69,5 +70,8 @@ Plug 'itchyny/vim-gitbranch'
 " UTILS
 " Plug 'ta-tikoma/phpunit.vim'
 " Plug 'diepm/vim-rest-console'
+
+" Plug 'codcodog/simplebuffer.vim'
+" Plug 'bling/vim-bufferline'
 
 call plug#end()

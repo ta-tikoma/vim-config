@@ -24,6 +24,7 @@ set ff=unix
 " поиск
 set hlsearch
 set incsearch
+" set smartcase
 " set inccommand=nosplit
 
 set ttyfast
@@ -49,13 +50,27 @@ set ww=lh
 inoremap jj <Esc>:w<CR>
 
 " навигация по буферам
-nmap <A-k> :bprevious<CR>
-nmap <A-j> :bnext<CR>
-nmap <A-c> :BD<CR>
-nmap <A-q> :bufdo bd<CR>
+nmap <C-j> :bprevious<CR>
+nmap <C-k> :bnext<CR>
+" nmap <C-c> :BD<CR>
+" nmap <C-q> :bufdo bd<CR>
+
+
+" сплиты
+nmap <C-s> :vsplit<CR>
+nmap <C-a> :split<CR>
+set splitright
+set splitbelow
+
+" навигация между окнами
+nmap <C-k> <C-w>k
+nmap <C-j> <C-w>j
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+
 "
-nmap <A-l> :tabnext<CR>
-nmap <A-h> :tabprev<CR>
+" nmap <A-l> :tabnext<CR>
+" nmap <A-h> :tabprev<CR>
 
 
 " вставить название файла
@@ -75,7 +90,7 @@ source ~/.config/nvim/include/coc.vim
 source ~/.config/nvim/include/coc-custom.vim
 source ~/.config/nvim/include/plugins-config.vim
 source ~/.config/nvim/include/lightline.vim
-source ~/.config/nvim/include/windows.vim
+" source ~/.config/nvim/include/windows.vim
 source ~/.config/nvim/include/php.vim
 " source ~/.config/nvim/include/ale.vim
 " source ~/.config/nvim/include/psalm.vim

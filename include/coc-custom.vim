@@ -8,7 +8,5 @@ hi CocUnderline gui=underline term=underline
 hi CocErrorHighlight ctermfg=red  guifg=#c4384b gui=underline term=underline
 hi CocWarningHighlight ctermfg=yellow guifg=#c4ab39 gui=underline term=underline
 
-nmap <space>e :CocCommand explorer<CR>
-nmap <space>b :CocCommand explorer
-            \ --sources=buffer+
-            \<CR>
+nmap <space>e :CocCommand explorer --sources=buffer+,file+<CR>
+nmap <space>b :CocCommand explorer --sources=buffer+<CR>
