@@ -4,6 +4,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/sonokai'
 
+" Plug 'huyvohcmc/atlas.vim'
+
 " PLUGINS
 
 " Валидация и помощь по языку
@@ -35,10 +37,12 @@ Plug 'jiangmiao/auto-pairs'
 " Мультикурсор как в саблайм
 Plug 'terryma/vim-multiple-cursors'
 
+" Навигация по маскам по проекту
+Plug 'tpope/vim-projectionist'
+
 " Эксплорер
 " Plug 'justinmk/vim-dirvish'
-
-Plug 'tpope/vim-projectionist'
+" Plug 'fsharpasharp/vim-dirvinist'
 
 " Повторение операций
 Plug 'tpope/vim-repeat'
@@ -50,7 +54,7 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/vim-easy-align'
 
 " чтоб выводить вертикальную линию конца строки
-Plug 'yggdroot/indentline'
+" Plug 'yggdroot/indentline'
 
 " начальный экран
 Plug 'mhinz/vim-startify'
@@ -73,5 +77,7 @@ Plug 'itchyny/vim-gitbranch'
 
 " Plug 'codcodog/simplebuffer.vim'
 " Plug 'bling/vim-bufferline'
+
+Plug 'ta-tikoma/php.easy.vim'
 
 call plug#end()

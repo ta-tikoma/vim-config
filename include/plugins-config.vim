@@ -1,9 +1,8 @@
-let g:indentLine_setConceal = 0
+" let g:indentLine_setConceal = 0
+" let g:indentLine_char = '·'
 
 " Quick-scope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-
-let g:indentLine_char = '·'
 
 " PHPUnit
 let g:phpunit_bin = 'cd devenv && docker-compose exec -T php72 php vendor/phpunit/phpunit/phpunit'
@@ -18,7 +17,7 @@ nmap ga <Plug>(EasyAlign)
 "########################
 " Easymotion
 "########################
-nmap s <Plug>(easymotion-overwin-f2)
+nmap s <Plug>(easymotion-s2)
 
 "########################
 " Fugitive

@@ -36,6 +36,8 @@ set ttyfast
 let g:sonokai_style = 'shusia'
 let g:sonokai_enable_italic = 1
 colorscheme sonokai
+" colorscheme atlas
+
 
 " чтоб табы были пробелами
 set autoindent
@@ -47,12 +49,18 @@ autocmd Filetype yaml setlocal shiftwidth=2
 " чтоб при навигации с конца строки перехоодило на новую и обратно
 set ww=lh
 
-inoremap jj <Esc>:w<CR>
+inoremap <expr> jj php#easy#insert#is() ? '<Esc>':'<Esc>:w<CR>'
+" inoremap jj <Esc>
+" inoremap jj <Esc>:w<CR>
 
 " навигация по буферам
+nmap <C-l> :tabnext<CR>
+nmap <C-h> :tabprev<CR>
 nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
-" nmap <C-c> :BD<CR>
+nmap <C-c> :BD<CR>
+nmap <C-x> :bd<CR>
+
 " nmap <C-q> :bufdo bd<CR>
 
 
@@ -63,14 +71,10 @@ set splitright
 set splitbelow
 
 " навигация между окнами
-nmap <C-k> <C-w>k
-nmap <C-j> <C-w>j
-nmap <C-h> <C-w>h
-nmap <C-l> <C-w>l
-
-"
-" nmap <A-l> :tabnext<CR>
-" nmap <A-h> :tabprev<CR>
+nmap <A-k> <C-w>k
+nmap <A-j> <C-w>j
+nmap <A-h> <C-w>h
+nmap <A-l> <C-w>l
 
 
 " вставить название файла
@@ -91,6 +95,6 @@ source ~/.config/nvim/include/coc-custom.vim
 source ~/.config/nvim/include/plugins-config.vim
 source ~/.config/nvim/include/lightline.vim
 " source ~/.config/nvim/include/windows.vim
-source ~/.config/nvim/include/php.vim
+" source ~/.config/nvim/include/php.vim
 " source ~/.config/nvim/include/ale.vim
 " source ~/.config/nvim/include/psalm.vim
