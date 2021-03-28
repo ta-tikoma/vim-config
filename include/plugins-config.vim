@@ -1,12 +1,9 @@
-" let g:indentLine_setConceal = 0
-" let g:indentLine_char = '·'
-
 " Quick-scope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " PHPUnit
-let g:phpunit_bin = 'cd devenv && docker-compose exec -T php72 php vendor/phpunit/phpunit/phpunit'
-noremap <F10> :PHPUnitRunCurrentFile<CR>
+" let g:phpunit_bin = 'cd devenv && docker-compose exec -T php72 php vendor/phpunit/phpunit/phpunit'
+" noremap <F10> :PHPUnitRunCurrentFile<CR>
 
 "########################
 " EasyAlign
@@ -66,3 +63,8 @@ let g:startify_lists = [
 let g:startify_relative_path = 1
 let g:startify_change_to_dir = 0
 let g:startify_change_to_vcs_root = 0
+
+function! StartifyEntryFormat()
+    return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
+endfunction
+

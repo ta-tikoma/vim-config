@@ -3,7 +3,7 @@ let g:lightline = {
     \ 'colorscheme': 'sonokai',
     \ 'active': {
     \   'left':  [[ 'filename', 'modified' ]],
-    \   'right': [[ 'gitbranch', 'lineinfo' ],
+    \   'right': [[ 'gitbranch' ],
     \             [ 'coc_error', 'coc_warning', 'coc_hint', 'coc_info' ]]
     \ },
     \ 'component_function': {
@@ -22,9 +22,8 @@ let g:lightline = {
     \   'coc_info'         : 'middle',
     \   'coc_hint'         : 'middle',
     \   'coc_fix'          : 'middle',
+    \ },
     \ }
-    \ }
-
 
 function! s:lightline_coc_diagnostic(kind) abort
   let info = get(b:, 'coc_diagnostic_info', 0)
@@ -52,3 +51,4 @@ function! LightlineCocHints() abort
 endfunction
 
 autocmd User CocDiagnosticChange call lightline#update()
+

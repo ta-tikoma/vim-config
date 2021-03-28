@@ -1,16 +1,14 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " THEMES
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
 Plug 'sainnhe/sonokai'
-
-" Plug 'huyvohcmc/atlas.vim'
+Plug 'ryanoasis/vim-devicons'
 
 " PLUGINS
 
 " Валидация и помощь по языку
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'dense-analysis/ale'
 
 " Закрыть буфер без закрытия сплита
 Plug 'qpkorr/vim-bufkill'
@@ -21,6 +19,7 @@ Plug 'easymotion/vim-easymotion'
 
 " Плагин для гита
 Plug 'tpope/vim-fugitive'
+" Plug 'airblade/vim-gitgutter'
 
 " Плагин по комментариям
 Plug 'tomtom/tcomment_vim'
@@ -38,14 +37,14 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 
 " Навигация по маскам по проекту
-Plug 'tpope/vim-projectionist'
+" Plug 'tpope/vim-projectionist'
 
 " Эксплорер
 " Plug 'justinmk/vim-dirvish'
 " Plug 'fsharpasharp/vim-dirvinist'
 
 " Повторение операций
-Plug 'tpope/vim-repeat'
+" Plug 'tpope/vim-repeat'
 
 " Для работы с парными элементами
 Plug 'tpope/vim-surround'
@@ -69,14 +68,12 @@ Plug 'junegunn/fzf.vim'
 " LIGHTLINE
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
-" Plug 'mengelbrecht/lightline-bufferline'
+
+" Plug 'dominikduda/vim_current_word'
 
 " UTILS
 " Plug 'ta-tikoma/phpunit.vim'
 " Plug 'diepm/vim-rest-console'
-
-" Plug 'codcodog/simplebuffer.vim'
-" Plug 'bling/vim-bufferline'
 
 Plug 'ta-tikoma/php.easy.vim'
 

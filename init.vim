@@ -24,20 +24,24 @@ set ff=unix
 " поиск
 set hlsearch
 set incsearch
-" set smartcase
-" set inccommand=nosplit
+set smartcase
+set ignorecase
 
+" перенос строк
+" set textwidth=0 
+" set wrapmargin=0
+" set nowrap
+"
 set ttyfast
 
 " set foldenable
 " set foldmethod=manual
 
-" colorscheme onedark
-let g:sonokai_style = 'shusia'
 let g:sonokai_enable_italic = 1
+let g:sonokai_style = 'shusia'
+let g:sonokai_diagnostic_line_highlight = 1
+let g:sonokai_current_word = 'bold'
 colorscheme sonokai
-" colorscheme atlas
-
 
 " чтоб табы были пробелами
 set autoindent
@@ -49,20 +53,18 @@ autocmd Filetype yaml setlocal shiftwidth=2
 " чтоб при навигации с конца строки перехоодило на новую и обратно
 set ww=lh
 
-inoremap <expr> jj php#easy#insert#is() ? '<Esc>':'<Esc>:w<CR>'
+" inoremap <expr> jj php#easy#insert#is() ? '<Esc>':'<Esc>:w<CR>'
 " inoremap jj <Esc>
-" inoremap jj <Esc>:w<CR>
+inoremap jj <Esc>:w<CR>
 
 " навигация по буферам
-nmap <C-l> :tabnext<CR>
-nmap <C-h> :tabprev<CR>
+" nmap <C-l> :tabnext<CR>
+" nmap <C-h> :tabprev<CR>
 nmap <C-j> :bprevious<CR>
 nmap <C-k> :bnext<CR>
 nmap <C-c> :BD<CR>
 nmap <C-x> :bd<CR>
-
-" nmap <C-q> :bufdo bd<CR>
-
+nmap <C-q> :bufdo bd<CR>
 
 " сплиты
 nmap <C-s> :vsplit<CR>
@@ -75,10 +77,13 @@ nmap <A-k> <C-w>k
 nmap <A-j> <C-w>j
 nmap <A-h> <C-w>h
 nmap <A-l> <C-w>l
-
+" nmap <C-k> <C-w>k
+" nmap <C-j> <C-w>j
+" nmap <C-h> <C-w>h
+" nmap <C-l> <C-w>l
 
 " вставить название файла
-inoremap <C-f> <C-R>=expand("%:t:r")<CR><Esc>
+" inoremap <C-f>     <C-r>=expand("%:t:r")<CR><Esc>
 
 " удалить вникуда
 nnoremap <leader>d "_d
@@ -94,7 +99,7 @@ source ~/.config/nvim/include/coc.vim
 source ~/.config/nvim/include/coc-custom.vim
 source ~/.config/nvim/include/plugins-config.vim
 source ~/.config/nvim/include/lightline.vim
+" source ~/.config/nvim/include/statusline.vim
+source ~/.config/nvim/include/autohighlight.vim
 " source ~/.config/nvim/include/windows.vim
-" source ~/.config/nvim/include/php.vim
 " source ~/.config/nvim/include/ale.vim
-" source ~/.config/nvim/include/psalm.vim
