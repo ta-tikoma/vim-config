@@ -1,16 +1,17 @@
 "" statusline
-set laststatus=2
-set statusline=                          
-set statusline+=%2*\                     
+set laststatus=0
+" set laststatus=2
+" set statusline=                          
+" set statusline+=%2*\                     
 " set statusline+=%2*\%{StatuslineMode()}
 " set statusline+=%2*\   
-set statusline+=%1*\%t
-set statusline+=%3*\%h%m%r               
-set statusline+=%=                       
-set statusline+=%*
-set statusline+=%2*\                     
-set statusline+=%2*\%{g:gitbranch}
-set statusline+=%2*\  
+" set statusline+=%1*\%t
+" set statusline+=%3*\%h%m%r               
+" set statusline+=%=                       
+" set statusline+=%*
+" set statusline+=%2*\                     
+" set statusline+=%2*\%{g:gitbranch}
+" set statusline+=%2*\  
 " set statusline+=%2*\  
 " set statusline+=%3*\%l/%L\               
 

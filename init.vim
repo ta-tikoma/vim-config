@@ -38,10 +38,10 @@ set ttyfast
 " set foldmethod=manual
 
 let g:sonokai_enable_italic = 1
-let g:sonokai_style = 'shusia'
+let g:sonokai_style = 'default'
 let g:sonokai_diagnostic_line_highlight = 1
-let g:sonokai_current_word = 'bold'
 colorscheme sonokai
+" colorscheme onedark
 
 " чтоб табы были пробелами
 set autoindent
@@ -87,7 +87,7 @@ nmap <A-l> <C-w>l
 
 " удалить вникуда
 nnoremap <leader>d "_d
-" nmap <silent> <leader>c *Ncgn
+nnoremap <leader>c *Ncgn
 
 " без свопа
 set nobackup
@@ -99,7 +99,5 @@ source ~/.config/nvim/include/coc.vim
 source ~/.config/nvim/include/coc-custom.vim
 source ~/.config/nvim/include/plugins-config.vim
 source ~/.config/nvim/include/lightline.vim
-" source ~/.config/nvim/include/statusline.vim
 source ~/.config/nvim/include/autohighlight.vim
-" source ~/.config/nvim/include/windows.vim
-" source ~/.config/nvim/include/ale.vim
+

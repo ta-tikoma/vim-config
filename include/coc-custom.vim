@@ -20,11 +20,11 @@ xmap <silent> <C-space> <Plug>(coc-range-select)
 
 " мультикурсор
 " hi CocCursorRange guibg=#b16286 guifg=#ebdbb2
-" xmap <silent> <C-n> y/\V<C-r>=escape(@",'/\')<CR><CR>gN<Plug>(coc-cursors-range)gn'")
-" nmap <expr> <silent> <C-n> <SID>select_current_word()
-" function! s:select_current_word()
+" nmap <A-d> :call Select_current_word()<CR>
+" function! Select_current_word()
 "   if !get(b:, 'coc_cursors_activated', 0)
-"     return "\<Plug>(coc-cursors-word)"
+"     exec "normal \<Plug>(coc-cursors-word)"
 "   endif
-"   return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
+"   call search('\<' . expand('<cword>') . '\>')
+"   exec "normal \<Plug>(coc-cursors-word)"
 " endfunc

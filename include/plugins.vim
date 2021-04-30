@@ -9,6 +9,7 @@ Plug 'ryanoasis/vim-devicons'
 
 " Валидация и помощь по языку
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'sheerun/vim-polyglot'
 
 " Закрыть буфер без закрытия сплита
 Plug 'qpkorr/vim-bufkill'
@@ -34,13 +35,14 @@ Plug 'jiangmiao/auto-pairs'
 " Plug 'kana/vim-submode'
 
 " Мультикурсор как в саблайм
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 
 " Навигация по маскам по проекту
 " Plug 'tpope/vim-projectionist'
 
 " Эксплорер
 " Plug 'justinmk/vim-dirvish'
+" Plug 'roginfarrer/vim-dirvish-dovish', {'branch': 'main'}
 " Plug 'fsharpasharp/vim-dirvinist'
 
 " Повторение операций
@@ -68,6 +70,7 @@ Plug 'junegunn/fzf.vim'
 " LIGHTLINE
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
+" Plug 'romgrk/barbar.nvim'
 
 " Plug 'dominikduda/vim_current_word'
 
