@@ -9,7 +9,7 @@ set clipboard=unnamedplus
 set termguicolors
 " set t_Co=256
 " подсветка стоки с курсором
-set cursorline
+" set cursorline
 " set guicursor=n-v-c-sm:ver26-blinkon0,i-ci-ve:ver25,r-cr-o:hor20
 set colorcolumn=80
 
@@ -37,11 +37,15 @@ set ttyfast
 " set foldenable
 " set foldmethod=manual
 
-let g:sonokai_enable_italic = 1
-let g:sonokai_style = 'default'
-let g:sonokai_diagnostic_line_highlight = 1
-colorscheme sonokai
+" let g:sonokai_enable_italic = 1
+" let g:sonokai_style = 'default'
+" let g:sonokai_diagnostic_line_highlight = 1
+" colorscheme sonokai
 " colorscheme onedark
+let g:gruvbox_improved_warnings=1
+colorscheme gruvbox
+set background=dark
+" set background=light
 
 " чтоб табы были пробелами
 set autoindent

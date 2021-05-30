@@ -4,9 +4,9 @@ nmap <silent> gD :call CocAction('jumpDefinition', 'split')<CR>
 nnoremap <silent> <space>tp  :CocCommand translator.popup<CR>
 nnoremap <silent> <space>tr  :CocCommand translator.replace<CR>
 
-hi CocUnderline gui=underline term=underline
-hi CocErrorHighlight ctermfg=red  guifg=#c4384b gui=underline term=underline
-hi CocWarningHighlight ctermfg=yellow guifg=#c4ab39 gui=underline term=underline
+" hi CocUnderline gui=underline term=underline
+" hi CocErrorHighlight ctermfg=red  guifg=#c4384b gui=underline term=underline
+" hi CocWarningHighlight ctermfg=yellow guifg=#c4ab39 gui=underline term=underline
 
 " вызов coc-explorer
 nmap <silent> <space>e :CocCommand explorer --sources=file+<CR>

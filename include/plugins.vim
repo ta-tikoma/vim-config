@@ -2,20 +2,21 @@ call plug#begin('~/.config/nvim/plugged')
 
 " THEMES
 " Plug 'joshdick/onedark.vim'
-Plug 'sainnhe/sonokai'
+" Plug 'sainnhe/sonokai'
+Plug 'morhetz/gruvbox'
 Plug 'ryanoasis/vim-devicons'
 
 " PLUGINS
 
 " Валидация и помощь по языку
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 
 " Закрыть буфер без закрытия сплита
 Plug 'qpkorr/vim-bufkill'
 
 " Быстрый переход
-Plug 'unblevable/quick-scope'
+" Plug 'unblevable/quick-scope'
 Plug 'easymotion/vim-easymotion'
 
 " Плагин для гита
@@ -77,6 +78,7 @@ Plug 'itchyny/vim-gitbranch'
 " UTILS
 " Plug 'ta-tikoma/phpunit.vim'
 " Plug 'diepm/vim-rest-console'
+Plug 'fmoralesc/vim-pad'
 
 Plug 'ta-tikoma/php.easy.vim'
 

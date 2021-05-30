@@ -1,6 +1,6 @@
 " lightline
 let g:lightline = {
-    \ 'colorscheme': 'sonokai',
+    \ 'colorscheme': 'gruvbox',
     \ 'active': {
     \   'left':  [[ 'filename', 'modified' ]],
     \   'right': [[ 'gitbranch' ],

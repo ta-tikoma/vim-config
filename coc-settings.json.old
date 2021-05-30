@@ -9,6 +9,7 @@
     "psalm.psalmScriptPath": "/home/ni_shi/.config/composer/vendor/bin/psalm-language-server",
     "psalm.psalmClientScriptPath": "/home/ni_shi/.config/composer/vendor/bin/psalm",
     "psalm.disableCompletion": true,
+    "psalm.disableDefinition": true,
 
     "explorer.icon.enableVimDevicons": true,
     "explorer.git.enable": false,
