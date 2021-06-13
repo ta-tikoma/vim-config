@@ -4,8 +4,9 @@
     "diagnostic.infoSign": "כֿ",
     "diagnostic.hintSign": "",
     
-    "coc.preferences.formatOnSaveFiletypes": ["php"],
+    "coc.preferences.formatOnSaveFiletypes": ["php", "blade"],
 
+    "psalm.enable": false,
     "psalm.psalmScriptPath": "/home/ni_shi/.config/composer/vendor/bin/psalm-language-server",
     "psalm.psalmClientScriptPath": "/home/ni_shi/.config/composer/vendor/bin/psalm",
     "psalm.disableCompletion": true,
@@ -26,7 +27,7 @@
     "explorer.quitOnOpen": true,
     "explorer.filename.colored.enable": false,
     "explorer.keyMappings.global": {
-        "d": "deleteForever"
+        "df": "deleteForever"
     },
 
     "translator.toLang": "en",
@@ -39,7 +40,9 @@
     "cSpell.enabledLanguageIds": [
         "php",
         "yaml",
-        "markdown"
+        "markdown",
+        "blade"
     ],
+    "cSpell.showStatus": false,
     "cSpell.showCommandsInEditorContextMenu": false
 }

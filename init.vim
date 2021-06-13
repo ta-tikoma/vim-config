@@ -9,7 +9,7 @@ set clipboard=unnamedplus
 set termguicolors
 " set t_Co=256
 " подсветка стоки с курсором
-" set cursorline
+set cursorline
 " set guicursor=n-v-c-sm:ver26-blinkon0,i-ci-ve:ver25,r-cr-o:hor20
 set colorcolumn=80
 

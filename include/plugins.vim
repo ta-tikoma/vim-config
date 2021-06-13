@@ -11,6 +11,7 @@ Plug 'ryanoasis/vim-devicons'
 " Валидация и помощь по языку
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'sheerun/vim-polyglot'
+Plug 'jwalton512/vim-blade'
 
 " Закрыть буфер без закрытия сплита
 Plug 'qpkorr/vim-bufkill'
@@ -37,6 +38,7 @@ Plug 'jiangmiao/auto-pairs'
 
 " Мультикурсор как в саблайм
 " Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " Навигация по маскам по проекту
 " Plug 'tpope/vim-projectionist'

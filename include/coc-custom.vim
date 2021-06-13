@@ -28,3 +28,6 @@ xmap <silent> <C-space> <Plug>(coc-range-select)
 "   call search('\<' . expand('<cword>') . '\>')
 "   exec "normal \<Plug>(coc-cursors-word)"
 " endfunc
+let g:coc_filetype_map = {
+  \ 'blade': 'php',
+  \ }
